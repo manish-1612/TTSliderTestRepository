@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Gloss.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-HorizontalParallaxTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,12 +27,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>66F19DAD4C2DBA0B98E9DE2592FCD87A</key>
+		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9C2C27230C1B824F2FB05A0E2441F889</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E23916CFE616285AFF21DFD157720E0B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

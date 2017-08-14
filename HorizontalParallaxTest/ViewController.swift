@@ -92,9 +92,6 @@ class ViewController: UIViewController {
     func TTSliderSetup(){
         
         self.slider = TTScrollSlidingPagesController()
-        self.slider?.dataSource = self
-        self.slider?.delegate = self
-        
 
         self.slider?.titleScrollerBottomEdgeColour = UIColor.clearColor()
         self.slider?.titleScrollerBottomEdgeHeight = 0
@@ -114,7 +111,14 @@ class ViewController: UIViewController {
         self.slider!.titleScrollerTriangleHidden = true
 
         self.slider?.view.frame = CGRectMake(0.0, self.view.frame.size.height - 177.0 - 40.0, self.view.frame.size.width, 177.0)
-        self.view.addSubview((self.slider?.view)!)//[self.view addSubview:self.slider.view];
+        self.view.addSubview((self.slider?.view)!)
+        
+        
+        self.slider?.dataSource = self
+        self.slider?.delegate = self
+        
+
+        //[self.view addSubview:self.slider.view];
         //self.addChildViewController(self.slider!)//[self addChildViewController:self.slider];
 
 

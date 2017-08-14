@@ -32,6 +32,8 @@
 		79C6D0331F41AB0100F9803F /* TTSlidingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0211F41AB0100F9803F /* TTSlidingPage.m */; };
 		79C6D0341F41AB0100F9803F /* TTSlidingPageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0251F41AB0100F9803F /* TTSlidingPageTitle.m */; };
 		79C6D0351F41AB0100F9803F /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */; };
+		79C6D0401F41E39000F9803F /* IRCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D03E1F41E39000F9803F /* IRCar.swift */; };
+		79C6D0411F41E39000F9803F /* IRCarSubCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D03F1F41E39000F9803F /* IRCarSubCategories.swift */; };
 		9F8380A29758009D5C141631 /* Pods_HorizontalParallaxTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348406033174F350A1A285FC /* Pods_HorizontalParallaxTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		79C6D0281F41AB0100F9803F /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
 		79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
 		79C6D03C1F41AC7D00F9803F /* HorizontalParallaxTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HorizontalParallaxTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		79C6D03E1F41E39000F9803F /* IRCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCar.swift; sourceTree = "<group>"; };
+		79C6D03F1F41E39000F9803F /* IRCarSubCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRCarSubCategories.swift; sourceTree = "<group>"; };
 		84B7ED66F2092F3816F180C4 /* Pods-HorizontalParallaxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B3C31BFE21420A67DC9DF929 /* Pods-HorizontalParallaxTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTestTests/Pods-HorizontalParallaxTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB1D10BDDF8A8D6EB62A11 /* Pods-HorizontalParallaxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		79C6D00D1F41AB0100F9803F /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				79C6D03D1F41E39000F9803F /* Model */,
 				79C6D00E1F41AB0100F9803F /* PageMenu */,
 				79C6D0131F41AB0100F9803F /* TTSlider */,
 			);
@@ -285,6 +290,15 @@
 				79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */,
 			);
 			path = SupportingLibraries;
+			sourceTree = "<group>";
+		};
+		79C6D03D1F41E39000F9803F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D03E1F41E39000F9803F /* IRCar.swift */,
+				79C6D03F1F41E39000F9803F /* IRCarSubCategories.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CE4457B9EE994E0D244AACF2 /* Frameworks */ = {
@@ -583,10 +597,12 @@
 				79C6D0331F41AB0100F9803F /* TTSlidingPage.m in Sources */,
 				79C6D0341F41AB0100F9803F /* TTSlidingPageTitle.m in Sources */,
 				7914A7051F4178AD005D40C0 /* ViewController4.swift in Sources */,
+				79C6D0411F41E39000F9803F /* IRCarSubCategories.swift in Sources */,
 				79C6D02A1F41AB0100F9803F /* CAPSPageMenu.swift in Sources */,
 				7914A6FF1F41787A005D40C0 /* ViewController1.swift in Sources */,
 				7914A7011F417889005D40C0 /* ViewController2.swift in Sources */,
 				79C6D0321F41AB0100F9803F /* TTScrollViewWrapper.m in Sources */,
+				79C6D0401F41E39000F9803F /* IRCar.swift in Sources */,
 				79C6D0301F41AB0100F9803F /* TTBlackTriangle.m in Sources */,
 				79C6D0311F41AB0100F9803F /* TTScrollSlidingPagesController.m in Sources */,
 				7914A6D31F417809005D40C0 /* ViewController.swift in Sources */,
