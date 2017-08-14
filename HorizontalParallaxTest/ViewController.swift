@@ -92,28 +92,28 @@ class ViewController: UIViewController {
     func TTSliderSetup(){
         
         self.slider = TTScrollSlidingPagesController()
-        self.slider?.titleScrollerInActiveTextColour = UIColor.grayColor()
-        self.slider?.titleScrollerBottomEdgeColour = UIColor.darkGrayColor()
-        self.slider?.titleScrollerBottomEdgeHeight = 2
-
         self.slider?.dataSource = self
         self.slider?.delegate = self
         
-        slider!.titleScrollerHeight = 30
-        slider?.titleScrollerTextFont = UIFont.systemFontOfSize(14.0)
-        slider?.titleScrollerInActiveTextFont = UIFont.systemFontOfSize(12.0)
-        slider?.titleScrollerTextColour = UIColor.blackColor()
-        slider?.titleScrollerInActiveTextColour = UIColor.grayColor()
-        slider!.titleScrollerItemWidth = Int32(UIScreen.mainScreen().bounds.size.width/2.0)
-        slider!.titleScrollerBackgroundColour = UIColor.whiteColor()
-        slider!.disableTitleScrollerShadow = true
-        slider!.disableUIPageControl = true
-        slider!.initialPageNumber = 0
-        slider!.pagingEnabled = true
-        slider!.zoomOutAnimationDisabled = true
-        slider!.disableTitleShadow = true
 
-        self.slider?.view.frame = CGRectMake(0.0, self.view.frame.size.height - 150.0, self.view.frame.size.width, 150.0)
+        self.slider?.titleScrollerBottomEdgeColour = UIColor.clearColor()
+        self.slider?.titleScrollerBottomEdgeHeight = 0
+        self.slider!.titleScrollerHeight = 30
+        self.slider?.titleScrollerTextFont = UIFont.boldSystemFontOfSize(14.0)
+        self.slider?.titleScrollerInActiveTextFont = UIFont.boldSystemFontOfSize(14.0)
+        self.slider?.titleScrollerTextColour = UIColor.blackColor()
+        self.slider?.titleScrollerInActiveTextColour = UIColor.grayColor()
+        self.slider!.titleScrollerItemWidth = Int32(UIScreen.mainScreen().bounds.size.width/2.0)
+        self.slider!.titleScrollerBackgroundColour = UIColor.whiteColor()
+        self.slider!.disableTitleScrollerShadow = true
+        self.slider!.disableUIPageControl = true
+        self.slider!.initialPageNumber = 0
+        self.slider!.pagingEnabled = true
+        self.slider!.zoomOutAnimationDisabled = true
+        self.slider!.disableTitleShadow = true
+        self.slider!.titleScrollerTriangleHidden = true
+
+        self.slider?.view.frame = CGRectMake(0.0, self.view.frame.size.height - 177.0 - 40.0, self.view.frame.size.width, 177.0)
         self.view.addSubview((self.slider?.view)!)//[self.view addSubview:self.slider.view];
         //self.addChildViewController(self.slider!)//[self addChildViewController:self.slider];
 
@@ -125,7 +125,7 @@ class ViewController: UIViewController {
 extension ViewController: TTSlidingPagesDataSource{
     
     func numberOfPagesForSlidingPagesViewController(source: TTScrollSlidingPagesController!) -> Int32 {
-        return 2
+        return 4
     }
     
     func pageForSlidingPagesViewController(source: TTScrollSlidingPagesController!, atIndex index: Int32) -> TTSlidingPage! {
@@ -161,19 +161,19 @@ extension ViewController: TTSlidingPagesDataSource{
     func titleForSlidingPagesViewController(source: TTScrollSlidingPagesController!, atIndex index: Int32) -> TTSlidingPageTitle! {
         switch index {
         case 0:
-            let title = TTSlidingPageTitle(headerText: "Economy")
+            let title = TTSlidingPageTitle(headerText: "ECONOMY")
             return title!
             
         case 1:
-            let title = TTSlidingPageTitle(headerText: "Luxury")
+            let title = TTSlidingPageTitle(headerText: "LUXURY")
             return title!
             
         case 2:
-            let title = TTSlidingPageTitle(headerText: "Share")
+            let title = TTSlidingPageTitle(headerText: "SHARE")
             return title!
             
         case 3:
-            let title = TTSlidingPageTitle(headerText: "Mini")
+            let title = TTSlidingPageTitle(headerText: "MINI")
             return title!
             
         default:
