@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HorizontalParallaxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="448"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="FcI-gr-hcU">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="0aN-sf-7xY" customClass="ViewController1" customModule="HorizontalParallaxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NLH-fo-ODY"/>
+                        <viewControllerLayoutGuide type="bottom" id="lKN-S3-saN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B2p-Bg-Ck6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.78823529410000004" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pA7-41-dFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="-602"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="WiE-pJ-Hly">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="X6L-8l-W4b" customClass="ViewController2" customModule="HorizontalParallaxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GRz-pn-e3U"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryC-UD-X8l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fKB-tz-z6z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.4941176471" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1e8-Uj-JFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="92"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="797-Kv-ene">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="Wx9-qj-CAI" customClass="ViewController3" customModule="HorizontalParallaxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvf-Eb-lUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpX-5I-d4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oDo-h3-f4d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.43971791840000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pA-lh-i3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="773"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="PLx-fJ-uzl">
+            <objects>
+                <viewController storyboardIdentifier="ViewController4" id="VAc-dn-5CV" customClass="ViewController4" customModule="HorizontalParallaxTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tbg-Qc-Ohb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ogs-D5-EzU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hwR-eP-ZlL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulE-Nb-QGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="1441"/>
+        </scene>
+    </scenes>
+</document>

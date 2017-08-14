@@ -1,0 +1,6 @@
+framework module Pods_HorizontalParallaxTestTests {
+  umbrella header "Pods-HorizontalParallaxTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

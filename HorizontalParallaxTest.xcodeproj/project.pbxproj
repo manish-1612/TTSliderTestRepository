@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA6728ECDCA78CC2F4E8BE6 /* Pods_HorizontalParallaxTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB54E34AD67CA437110151E4 /* Pods_HorizontalParallaxTestUITests.framework */; };
+		486D2C5C75E560893FB09C0E /* Pods_HorizontalParallaxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C9CAD6863294D3900F8EA4 /* Pods_HorizontalParallaxTest.framework */; };
+		7914A6D11F417809005D40C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A6D01F417809005D40C0 /* AppDelegate.swift */; };
+		7914A6D31F417809005D40C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A6D21F417809005D40C0 /* ViewController.swift */; };
+		7914A6D61F417809005D40C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7914A6D41F417809005D40C0 /* Main.storyboard */; };
+		7914A6D81F417809005D40C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7914A6D71F417809005D40C0 /* Assets.xcassets */; };
+		7914A6DB1F417809005D40C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7914A6D91F417809005D40C0 /* LaunchScreen.storyboard */; };
+		7914A6E61F417809005D40C0 /* HorizontalParallaxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A6E51F417809005D40C0 /* HorizontalParallaxTestTests.swift */; };
+		7914A6F11F417809005D40C0 /* HorizontalParallaxTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A6F01F417809005D40C0 /* HorizontalParallaxTestUITests.swift */; };
+		7914A6FF1F41787A005D40C0 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A6FE1F41787A005D40C0 /* ViewController1.swift */; };
+		7914A7011F417889005D40C0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7001F417889005D40C0 /* ViewController2.swift */; };
+		7914A7031F417897005D40C0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7021F417897005D40C0 /* ViewController3.swift */; };
+		7914A7051F4178AD005D40C0 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7041F4178AD005D40C0 /* ViewController4.swift */; };
+		79C6D02A1F41AB0100F9803F /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */; };
+		79C6D02B1F41AB0100F9803F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0111F41AB0100F9803F /* LICENSE */; };
+		79C6D02C1F41AB0100F9803F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0121F41AB0100F9803F /* README.md */; };
+		79C6D02D1F41AB0100F9803F /* diagmonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0171F41AB0100F9803F /* diagmonds.png */; };
+		79C6D02E1F41AB0100F9803F /* diagmonds_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0181F41AB0100F9803F /* diagmonds_@2X.png */; };
+		79C6D02F1F41AB0100F9803F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0191F41AB0100F9803F /* readme.txt */; };
+		79C6D0301F41AB0100F9803F /* TTBlackTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D01B1F41AB0100F9803F /* TTBlackTriangle.m */; };
+		79C6D0311F41AB0100F9803F /* TTScrollSlidingPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D01D1F41AB0100F9803F /* TTScrollSlidingPagesController.m */; };
+		79C6D0321F41AB0100F9803F /* TTScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D01F1F41AB0100F9803F /* TTScrollViewWrapper.m */; };
+		79C6D0331F41AB0100F9803F /* TTSlidingPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0211F41AB0100F9803F /* TTSlidingPage.m */; };
+		79C6D0341F41AB0100F9803F /* TTSlidingPageTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0251F41AB0100F9803F /* TTSlidingPageTitle.m */; };
+		79C6D0351F41AB0100F9803F /* TTUITableViewZoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */; };
+		9F8380A29758009D5C141631 /* Pods_HorizontalParallaxTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348406033174F350A1A285FC /* Pods_HorizontalParallaxTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7914A6E21F417809005D40C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7914A6C51F417809005D40C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7914A6CC1F417809005D40C0;
+			remoteInfo = HorizontalParallaxTest;
+		};
+		7914A6ED1F417809005D40C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7914A6C51F417809005D40C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7914A6CC1F417809005D40C0;
+			remoteInfo = HorizontalParallaxTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		348406033174F350A1A285FC /* Pods_HorizontalParallaxTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalParallaxTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F18AA10FD20D75CF353A5E /* Pods-HorizontalParallaxTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTestUITests/Pods-HorizontalParallaxTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73C9CAD6863294D3900F8EA4 /* Pods_HorizontalParallaxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalParallaxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7914A6CD1F417809005D40C0 /* HorizontalParallaxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalParallaxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7914A6D01F417809005D40C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7914A6D21F417809005D40C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7914A6D51F417809005D40C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7914A6D71F417809005D40C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7914A6DA1F417809005D40C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7914A6DC1F417809005D40C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7914A6E11F417809005D40C0 /* HorizontalParallaxTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalParallaxTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7914A6E51F417809005D40C0 /* HorizontalParallaxTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalParallaxTestTests.swift; sourceTree = "<group>"; };
+		7914A6E71F417809005D40C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7914A6EC1F417809005D40C0 /* HorizontalParallaxTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalParallaxTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7914A6F01F417809005D40C0 /* HorizontalParallaxTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalParallaxTestUITests.swift; sourceTree = "<group>"; };
+		7914A6F21F417809005D40C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7914A6FE1F41787A005D40C0 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		7914A7001F417889005D40C0 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		7914A7021F417897005D40C0 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		7914A7041F4178AD005D40C0 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		79C6D0111F41AB0100F9803F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		79C6D0121F41AB0100F9803F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		79C6D0171F41AB0100F9803F /* diagmonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagmonds.png; sourceTree = "<group>"; };
+		79C6D0181F41AB0100F9803F /* diagmonds_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diagmonds_@2X.png"; sourceTree = "<group>"; };
+		79C6D0191F41AB0100F9803F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		79C6D01A1F41AB0100F9803F /* TTBlackTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBlackTriangle.h; sourceTree = "<group>"; };
+		79C6D01B1F41AB0100F9803F /* TTBlackTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBlackTriangle.m; sourceTree = "<group>"; };
+		79C6D01C1F41AB0100F9803F /* TTScrollSlidingPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScrollSlidingPagesController.h; sourceTree = "<group>"; };
+		79C6D01D1F41AB0100F9803F /* TTScrollSlidingPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTScrollSlidingPagesController.m; sourceTree = "<group>"; };
+		79C6D01E1F41AB0100F9803F /* TTScrollViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScrollViewWrapper.h; sourceTree = "<group>"; };
+		79C6D01F1F41AB0100F9803F /* TTScrollViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTScrollViewWrapper.m; sourceTree = "<group>"; };
+		79C6D0201F41AB0100F9803F /* TTSlidingPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSlidingPage.h; sourceTree = "<group>"; };
+		79C6D0211F41AB0100F9803F /* TTSlidingPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSlidingPage.m; sourceTree = "<group>"; };
+		79C6D0221F41AB0100F9803F /* TTSlidingPageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSlidingPageDelegate.h; sourceTree = "<group>"; };
+		79C6D0231F41AB0100F9803F /* TTSlidingPagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSlidingPagesDataSource.h; sourceTree = "<group>"; };
+		79C6D0241F41AB0100F9803F /* TTSlidingPageTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSlidingPageTitle.h; sourceTree = "<group>"; };
+		79C6D0251F41AB0100F9803F /* TTSlidingPageTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSlidingPageTitle.m; sourceTree = "<group>"; };
+		79C6D0261F41AB0100F9803F /* TTUIScrollViewSlidingPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUIScrollViewSlidingPages.h; sourceTree = "<group>"; };
+		79C6D0281F41AB0100F9803F /* TTUITableViewZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUITableViewZoomController.h; sourceTree = "<group>"; };
+		79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTUITableViewZoomController.m; sourceTree = "<group>"; };
+		79C6D03C1F41AC7D00F9803F /* HorizontalParallaxTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HorizontalParallaxTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		84B7ED66F2092F3816F180C4 /* Pods-HorizontalParallaxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B3C31BFE21420A67DC9DF929 /* Pods-HorizontalParallaxTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTestTests/Pods-HorizontalParallaxTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FB1D10BDDF8A8D6EB62A11 /* Pods-HorizontalParallaxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest.release.xcconfig"; sourceTree = "<group>"; };
+		DB54E34AD67CA437110151E4 /* Pods_HorizontalParallaxTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorizontalParallaxTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22E893BD4692AE55E5379E7 /* Pods-HorizontalParallaxTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTestTests/Pods-HorizontalParallaxTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBDF371F7830EDE2FB90B475 /* Pods-HorizontalParallaxTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorizontalParallaxTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HorizontalParallaxTestUITests/Pods-HorizontalParallaxTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7914A6CA1F417809005D40C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486D2C5C75E560893FB09C0E /* Pods_HorizontalParallaxTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6DE1F417809005D40C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8380A29758009D5C141631 /* Pods_HorizontalParallaxTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6E91F417809005D40C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA6728ECDCA78CC2F4E8BE6 /* Pods_HorizontalParallaxTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B49056A3B2D4317453634A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84B7ED66F2092F3816F180C4 /* Pods-HorizontalParallaxTest.debug.xcconfig */,
+				C7FB1D10BDDF8A8D6EB62A11 /* Pods-HorizontalParallaxTest.release.xcconfig */,
+				B3C31BFE21420A67DC9DF929 /* Pods-HorizontalParallaxTestTests.debug.xcconfig */,
+				F22E893BD4692AE55E5379E7 /* Pods-HorizontalParallaxTestTests.release.xcconfig */,
+				65F18AA10FD20D75CF353A5E /* Pods-HorizontalParallaxTestUITests.debug.xcconfig */,
+				FBDF371F7830EDE2FB90B475 /* Pods-HorizontalParallaxTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7914A6C41F417809005D40C0 = {
+			isa = PBXGroup;
+			children = (
+				7914A6CF1F417809005D40C0 /* HorizontalParallaxTest */,
+				7914A6E41F417809005D40C0 /* HorizontalParallaxTestTests */,
+				7914A6EF1F417809005D40C0 /* HorizontalParallaxTestUITests */,
+				7914A6CE1F417809005D40C0 /* Products */,
+				CE4457B9EE994E0D244AACF2 /* Frameworks */,
+				30B49056A3B2D4317453634A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7914A6CE1F417809005D40C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7914A6CD1F417809005D40C0 /* HorizontalParallaxTest.app */,
+				7914A6E11F417809005D40C0 /* HorizontalParallaxTestTests.xctest */,
+				7914A6EC1F417809005D40C0 /* HorizontalParallaxTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7914A6CF1F417809005D40C0 /* HorizontalParallaxTest */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D00D1F41AB0100F9803F /* ThirdParty */,
+				7914A6D01F417809005D40C0 /* AppDelegate.swift */,
+				7914A6D21F417809005D40C0 /* ViewController.swift */,
+				7914A6D41F417809005D40C0 /* Main.storyboard */,
+				7914A6D71F417809005D40C0 /* Assets.xcassets */,
+				7914A6D91F417809005D40C0 /* LaunchScreen.storyboard */,
+				7914A6DC1F417809005D40C0 /* Info.plist */,
+				7914A6FE1F41787A005D40C0 /* ViewController1.swift */,
+				7914A7001F417889005D40C0 /* ViewController2.swift */,
+				7914A7021F417897005D40C0 /* ViewController3.swift */,
+				7914A7041F4178AD005D40C0 /* ViewController4.swift */,
+				79C6D03C1F41AC7D00F9803F /* HorizontalParallaxTest-Bridging-Header.h */,
+			);
+			path = HorizontalParallaxTest;
+			sourceTree = "<group>";
+		};
+		7914A6E41F417809005D40C0 /* HorizontalParallaxTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				7914A6E51F417809005D40C0 /* HorizontalParallaxTestTests.swift */,
+				7914A6E71F417809005D40C0 /* Info.plist */,
+			);
+			path = HorizontalParallaxTestTests;
+			sourceTree = "<group>";
+		};
+		7914A6EF1F417809005D40C0 /* HorizontalParallaxTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7914A6F01F417809005D40C0 /* HorizontalParallaxTestUITests.swift */,
+				7914A6F21F417809005D40C0 /* Info.plist */,
+			);
+			path = HorizontalParallaxTestUITests;
+			sourceTree = "<group>";
+		};
+		79C6D00D1F41AB0100F9803F /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D00E1F41AB0100F9803F /* PageMenu */,
+				79C6D0131F41AB0100F9803F /* TTSlider */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		79C6D00E1F41AB0100F9803F /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D00F1F41AB0100F9803F /* Classes */,
+				79C6D0111F41AB0100F9803F /* LICENSE */,
+				79C6D0121F41AB0100F9803F /* README.md */,
+			);
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		79C6D00F1F41AB0100F9803F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		79C6D0131F41AB0100F9803F /* TTSlider */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0141F41AB0100F9803F /* Source */,
+				79C6D0271F41AB0100F9803F /* SupportingLibraries */,
+			);
+			path = TTSlider;
+			sourceTree = "<group>";
+		};
+		79C6D0141F41AB0100F9803F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0151F41AB0100F9803F /* Images */,
+				79C6D01A1F41AB0100F9803F /* TTBlackTriangle.h */,
+				79C6D01B1F41AB0100F9803F /* TTBlackTriangle.m */,
+				79C6D01C1F41AB0100F9803F /* TTScrollSlidingPagesController.h */,
+				79C6D01D1F41AB0100F9803F /* TTScrollSlidingPagesController.m */,
+				79C6D01E1F41AB0100F9803F /* TTScrollViewWrapper.h */,
+				79C6D01F1F41AB0100F9803F /* TTScrollViewWrapper.m */,
+				79C6D0201F41AB0100F9803F /* TTSlidingPage.h */,
+				79C6D0211F41AB0100F9803F /* TTSlidingPage.m */,
+				79C6D0221F41AB0100F9803F /* TTSlidingPageDelegate.h */,
+				79C6D0231F41AB0100F9803F /* TTSlidingPagesDataSource.h */,
+				79C6D0241F41AB0100F9803F /* TTSlidingPageTitle.h */,
+				79C6D0251F41AB0100F9803F /* TTSlidingPageTitle.m */,
+				79C6D0261F41AB0100F9803F /* TTUIScrollViewSlidingPages.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		79C6D0151F41AB0100F9803F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0161F41AB0100F9803F /* diagmonds */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		79C6D0161F41AB0100F9803F /* diagmonds */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0171F41AB0100F9803F /* diagmonds.png */,
+				79C6D0181F41AB0100F9803F /* diagmonds_@2X.png */,
+				79C6D0191F41AB0100F9803F /* readme.txt */,
+			);
+			path = diagmonds;
+			sourceTree = "<group>";
+		};
+		79C6D0271F41AB0100F9803F /* SupportingLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				79C6D0281F41AB0100F9803F /* TTUITableViewZoomController.h */,
+				79C6D0291F41AB0100F9803F /* TTUITableViewZoomController.m */,
+			);
+			path = SupportingLibraries;
+			sourceTree = "<group>";
+		};
+		CE4457B9EE994E0D244AACF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73C9CAD6863294D3900F8EA4 /* Pods_HorizontalParallaxTest.framework */,
+				348406033174F350A1A285FC /* Pods_HorizontalParallaxTestTests.framework */,
+				DB54E34AD67CA437110151E4 /* Pods_HorizontalParallaxTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7914A6CC1F417809005D40C0 /* HorizontalParallaxTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7914A6F51F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTest" */;
+			buildPhases = (
+				58464D9F3037B9B684FA40CC /* [CP] Check Pods Manifest.lock */,
+				7914A6C91F417809005D40C0 /* Sources */,
+				7914A6CA1F417809005D40C0 /* Frameworks */,
+				7914A6CB1F417809005D40C0 /* Resources */,
+				70CFC05ECD6CAF68D0E61B75 /* [CP] Embed Pods Frameworks */,
+				0AC3794F9EE831D216D92273 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HorizontalParallaxTest;
+			productName = HorizontalParallaxTest;
+			productReference = 7914A6CD1F417809005D40C0 /* HorizontalParallaxTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7914A6E01F417809005D40C0 /* HorizontalParallaxTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7914A6F81F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTestTests" */;
+			buildPhases = (
+				695C0D61E9E7D0E8EC252638 /* [CP] Check Pods Manifest.lock */,
+				7914A6DD1F417809005D40C0 /* Sources */,
+				7914A6DE1F417809005D40C0 /* Frameworks */,
+				7914A6DF1F417809005D40C0 /* Resources */,
+				B9BD82477F74C6D07DAAF2F3 /* [CP] Embed Pods Frameworks */,
+				5A6FE09EE092579E8FE25BCC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7914A6E31F417809005D40C0 /* PBXTargetDependency */,
+			);
+			name = HorizontalParallaxTestTests;
+			productName = HorizontalParallaxTestTests;
+			productReference = 7914A6E11F417809005D40C0 /* HorizontalParallaxTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7914A6EB1F417809005D40C0 /* HorizontalParallaxTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7914A6FB1F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTestUITests" */;
+			buildPhases = (
+				BF8E53F1CF486D2501EA8C45 /* [CP] Check Pods Manifest.lock */,
+				7914A6E81F417809005D40C0 /* Sources */,
+				7914A6E91F417809005D40C0 /* Frameworks */,
+				7914A6EA1F417809005D40C0 /* Resources */,
+				9AEA336248145A0C6FB38683 /* [CP] Embed Pods Frameworks */,
+				FDFB2CAE43832694C29BAD2A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7914A6EE1F417809005D40C0 /* PBXTargetDependency */,
+			);
+			name = HorizontalParallaxTestUITests;
+			productName = HorizontalParallaxTestUITests;
+			productReference = 7914A6EC1F417809005D40C0 /* HorizontalParallaxTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7914A6C51F417809005D40C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Innofied;
+				TargetAttributes = {
+					7914A6CC1F417809005D40C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					7914A6E01F417809005D40C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7914A6CC1F417809005D40C0;
+					};
+					7914A6EB1F417809005D40C0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 7914A6CC1F417809005D40C0;
+					};
+				};
+			};
+			buildConfigurationList = 7914A6C81F417809005D40C0 /* Build configuration list for PBXProject "HorizontalParallaxTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7914A6C41F417809005D40C0;
+			productRefGroup = 7914A6CE1F417809005D40C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7914A6CC1F417809005D40C0 /* HorizontalParallaxTest */,
+				7914A6E01F417809005D40C0 /* HorizontalParallaxTestTests */,
+				7914A6EB1F417809005D40C0 /* HorizontalParallaxTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7914A6CB1F417809005D40C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7914A6DB1F417809005D40C0 /* LaunchScreen.storyboard in Resources */,
+				7914A6D81F417809005D40C0 /* Assets.xcassets in Resources */,
+				79C6D02D1F41AB0100F9803F /* diagmonds.png in Resources */,
+				79C6D02E1F41AB0100F9803F /* diagmonds_@2X.png in Resources */,
+				79C6D02F1F41AB0100F9803F /* readme.txt in Resources */,
+				79C6D02B1F41AB0100F9803F /* LICENSE in Resources */,
+				7914A6D61F417809005D40C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6DF1F417809005D40C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6EA1F417809005D40C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC3794F9EE831D216D92273 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58464D9F3037B9B684FA40CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A6FE09EE092579E8FE25BCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTestTests/Pods-HorizontalParallaxTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		695C0D61E9E7D0E8EC252638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70CFC05ECD6CAF68D0E61B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTest/Pods-HorizontalParallaxTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AEA336248145A0C6FB38683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTestUITests/Pods-HorizontalParallaxTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BD82477F74C6D07DAAF2F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTestTests/Pods-HorizontalParallaxTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8E53F1CF486D2501EA8C45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDFB2CAE43832694C29BAD2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HorizontalParallaxTestUITests/Pods-HorizontalParallaxTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7914A6C91F417809005D40C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7914A7031F417897005D40C0 /* ViewController3.swift in Sources */,
+				79C6D0331F41AB0100F9803F /* TTSlidingPage.m in Sources */,
+				79C6D0341F41AB0100F9803F /* TTSlidingPageTitle.m in Sources */,
+				7914A7051F4178AD005D40C0 /* ViewController4.swift in Sources */,
+				79C6D02A1F41AB0100F9803F /* CAPSPageMenu.swift in Sources */,
+				7914A6FF1F41787A005D40C0 /* ViewController1.swift in Sources */,
+				7914A7011F417889005D40C0 /* ViewController2.swift in Sources */,
+				79C6D0321F41AB0100F9803F /* TTScrollViewWrapper.m in Sources */,
+				79C6D0301F41AB0100F9803F /* TTBlackTriangle.m in Sources */,
+				79C6D0311F41AB0100F9803F /* TTScrollSlidingPagesController.m in Sources */,
+				7914A6D31F417809005D40C0 /* ViewController.swift in Sources */,
+				79C6D02C1F41AB0100F9803F /* README.md in Sources */,
+				79C6D0351F41AB0100F9803F /* TTUITableViewZoomController.m in Sources */,
+				7914A6D11F417809005D40C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6DD1F417809005D40C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7914A6E61F417809005D40C0 /* HorizontalParallaxTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7914A6E81F417809005D40C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7914A6F11F417809005D40C0 /* HorizontalParallaxTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7914A6E31F417809005D40C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7914A6CC1F417809005D40C0 /* HorizontalParallaxTest */;
+			targetProxy = 7914A6E21F417809005D40C0 /* PBXContainerItemProxy */;
+		};
+		7914A6EE1F417809005D40C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7914A6CC1F417809005D40C0 /* HorizontalParallaxTest */;
+			targetProxy = 7914A6ED1F417809005D40C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7914A6D41F417809005D40C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7914A6D51F417809005D40C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7914A6D91F417809005D40C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7914A6DA1F417809005D40C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7914A6F31F417809005D40C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7914A6F41F417809005D40C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7914A6F61F417809005D40C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B7ED66F2092F3816F180C4 /* Pods-HorizontalParallaxTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HorizontalParallaxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/HorizontalParallaxTest/HorizontalParallaxTest-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		7914A6F71F417809005D40C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FB1D10BDDF8A8D6EB62A11 /* Pods-HorizontalParallaxTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HorizontalParallaxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/HorizontalParallaxTest/HorizontalParallaxTest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		7914A6F91F417809005D40C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C31BFE21420A67DC9DF929 /* Pods-HorizontalParallaxTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HorizontalParallaxTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorizontalParallaxTest.app/HorizontalParallaxTest";
+			};
+			name = Debug;
+		};
+		7914A6FA1F417809005D40C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22E893BD4692AE55E5379E7 /* Pods-HorizontalParallaxTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HorizontalParallaxTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorizontalParallaxTest.app/HorizontalParallaxTest";
+			};
+			name = Release;
+		};
+		7914A6FC1F417809005D40C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F18AA10FD20D75CF353A5E /* Pods-HorizontalParallaxTestUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HorizontalParallaxTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HorizontalParallaxTest;
+			};
+			name = Debug;
+		};
+		7914A6FD1F417809005D40C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDF371F7830EDE2FB90B475 /* Pods-HorizontalParallaxTestUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HorizontalParallaxTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innofied.HorizontalParallaxTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HorizontalParallaxTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7914A6C81F417809005D40C0 /* Build configuration list for PBXProject "HorizontalParallaxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7914A6F31F417809005D40C0 /* Debug */,
+				7914A6F41F417809005D40C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7914A6F51F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7914A6F61F417809005D40C0 /* Debug */,
+				7914A6F71F417809005D40C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7914A6F81F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7914A6F91F417809005D40C0 /* Debug */,
+				7914A6FA1F417809005D40C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7914A6FB1F417809005D40C0 /* Build configuration list for PBXNativeTarget "HorizontalParallaxTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7914A6FC1F417809005D40C0 /* Debug */,
+				7914A6FD1F417809005D40C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7914A6C51F417809005D40C0 /* Project object */;
+}
