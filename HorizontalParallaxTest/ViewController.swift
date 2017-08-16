@@ -165,6 +165,11 @@ extension ViewController: TTSlidingPagesDataSource{
         viewController.arrayForCarTypes = car.subCategories
         viewController.carSelectionDelegate = self
         viewController.parentVC = self
+        if index == 0{
+            viewController.shouldSelectionBeDone = true
+        }else{
+            viewController.shouldSelectionBeDone = false
+        }
         viewController.view.backgroundColor = UIColor.clearColor()
         
         return TTSlidingPage(contentViewController: viewController)
