@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol CarSelectionVCDelegate:class {
+    func carSelectedWithSubCategory(subcategory: IRCarSubCategories)
+}
+
+
 class ViewController1: UIViewController {
     
     var arrayForCarTypes : [IRCarSubCategories]?
     var arrayForCarButtons: [IRCarButton]?
+    var carSelectionDelegate: CarSelectionVCDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +42,7 @@ class ViewController1: UIViewController {
                 
                 let frame = CGRectMake(0.0, self.view.frame.size.height / 2.0, self.view.frame.size.width, 1.0)
                 let centreLine = UIView(frame: frame)
-                centreLine.backgroundColor = UIColor.blackColor()
+                centreLine.backgroundColor = UIColor.clearColor()
                 self.view.addSubview(centreLine)
                 
                 createCarButtonsHorizontallyWith(centreLine.frame.origin.y)
@@ -83,7 +89,10 @@ class ViewController1: UIViewController {
     
     func carSelected(sender: IRCarButton){
         
-        print("car selected : \(sender.category?.category, sender.category?.subCategory)")
+        if carSelectionDelegate != nil{
+            carSelectionDelegate?.carSelectedWithSubCategory(sender.category!)
+        }
+    
     }
 
 }

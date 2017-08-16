@@ -162,11 +162,9 @@ extension ViewController: TTSlidingPagesDataSource{
         
         let viewController : ViewController1 = main.instantiateViewControllerWithIdentifier("ViewController1") as! ViewController1
         viewController.arrayForCarTypes = car.subCategories
-        if index % 2 == 0{
-            viewController.view.backgroundColor = UIColor.blueColor()
-        }else{
-            viewController.view.backgroundColor = UIColor.yellowColor()
-        }
+        viewController.carSelectionDelegate = self
+        viewController.view.backgroundColor = UIColor.clearColor()
+
         return TTSlidingPage(contentViewController: viewController)
         
     }
@@ -190,3 +188,10 @@ extension ViewController: TTSlidingPageDelegate{
     }
 }
 
+
+extension ViewController: CarSelectionVCDelegate{
+    
+    func carSelectedWithSubCategory(subcategory: IRCarSubCategories) {
+        print("selected category : \(subcategory.category, subcategory.subCategory)")
+    }
+}
