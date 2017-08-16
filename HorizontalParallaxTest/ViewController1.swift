@@ -54,30 +54,14 @@ class ViewController1: UIViewController {
         
         arrayForCarButtons = [IRCarButton]()
         
-        var intermediateSpacing: CGFloat = 0.0
-        switch arrayForCarTypes!.count {
-        case 0:
-            intermediateSpacing = 0.0
-        case 1:
-            intermediateSpacing = 0.0
-        case 2:
-            intermediateSpacing = 130.0
-        case 3:
-            intermediateSpacing = 55.0
-            
-        default:
-            intermediateSpacing = 0.0
-        }
+        let intermediateSpacing = (self.view.frame.size.width - (CGFloat(arrayForCarTypes!.count) * 72.0))/CGFloat(arrayForCarTypes!.count + 1)
         
         for i in 0...(arrayForCarTypes?.count)!-1{
             let subCategory = arrayForCarTypes![i]
             
-            
             let xOrigin = (CGFloat(i) * 72.0) + (intermediateSpacing * CGFloat(i + 1))
             let yOrigin = centreY - (72.0/2.0)
-            
-            print("xOrigin : \(xOrigin)")
-            
+                        
             let frameForButton = CGRectMake(xOrigin, yOrigin, 72.0, 72.0)
             let carButton = IRCarButton(frame: frameForButton, category: subCategory)
             if i % 2 == 0{
@@ -86,6 +70,7 @@ class ViewController1: UIViewController {
                 carButton.backgroundColor = UIColor.purpleColor()
             }
             
+            carButton.addTarget(self, action: #selector(ViewController1.carSelected(_:)), forControlEvents: .TouchUpInside)
             carButton.layer.cornerRadius = 72.0/2.0
             carButton.layer.masksToBounds = true
             self.view.addSubview(carButton)
@@ -93,8 +78,12 @@ class ViewController1: UIViewController {
             arrayForCarButtons?.append(carButton)
             
         }
+    }
+    
+    
+    func carSelected(sender: IRCarButton){
         
-        print("Car buttons: \(arrayForCarButtons?.count)")
+        print("car selected : \(sender.category?.category, sender.category?.subCategory)")
     }
 
 }

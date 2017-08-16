@@ -1,6 +1,6 @@
 {
     "innoType": [{
-                 "_id": 0,
+                 "_id": "Taxi",
                  "category": "Taxi",
                  "subCategories": [{
                                    "_id": "597728c59579c7003092c9a9",
@@ -15,10 +15,8 @@
                                    },
                                    {
                                    "_id": "597728dc9579c7003092c9aa",
-                                   "name": "Taxi",
-                                   "subCategoryName": "yellow",
-                                   "category": 0,
-                                   "subCategory": 1,
+                                   "category": "Taxi",
+                                   "subCategory": "yellow",
                                    "pricePerKm": "10",
                                    "waitingCharegePerMin": "5",
                                    "baseFare": "30",
@@ -29,7 +27,7 @@
                                    ]
                  },
                  {
-                 "_id": 1,
+                 "_id": "Sedan",
                  "category": "Sedan",
                  "subCategories": [{
                                    "_id": "597728f79579c7003092c9ab",

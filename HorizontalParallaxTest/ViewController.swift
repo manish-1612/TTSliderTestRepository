@@ -182,11 +182,11 @@ extension ViewController: TTSlidingPagesDataSource{
 
 extension ViewController: TTSlidingPageDelegate{
     func didScrollToViewAtIndex(index: UInt) {
-        print("index : \(index)")
+
     }
     
     func didTapOnScrollTopView(index: UInt) {
-        print("index : \(index)")
+
     }
 }
 
