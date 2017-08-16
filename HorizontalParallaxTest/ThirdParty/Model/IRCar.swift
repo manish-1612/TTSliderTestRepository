@@ -11,8 +11,8 @@ import Gloss
 public struct IRCar : Decodable, Encodable {
     
     public var _id : String!
-    public var name : String!
-      public var subCategories: [IRCarSubCategories]?
+    public var category : String!
+    public var subCategories: [IRCarSubCategories]?
     
     public init() {
         
@@ -21,7 +21,7 @@ public struct IRCar : Decodable, Encodable {
     // Deserialization
     public init?(json: JSON) {
         _id = "_id" <~~ json
-        name = "name" <~~ json
+        category = "category" <~~ json
         subCategories = "subCategories" <~~ json
 
     }
@@ -30,7 +30,7 @@ public struct IRCar : Decodable, Encodable {
     public func toJSON() -> JSON? {
         return jsonify([
             "_id" ~~> self._id,
-            "name" ~~> self.name,
+            "category" ~~> self.category,
             "subCategories" ~~> self.subCategories
 
             ])
@@ -40,7 +40,7 @@ public struct IRCar : Decodable, Encodable {
     public init(dictionary: Dictionary<String, AnyObject>){
         
         _id = dictionary["_id"] as? String
-        name = dictionary["name"] as? String
+        category = dictionary["category"] as? String
       
         let arrFromEncoding = dictionary["subCategories"] as? [Dictionary<String,AnyObject>]
       
@@ -64,7 +64,7 @@ public struct IRCar : Decodable, Encodable {
         var dictionary : Dictionary = Dictionary<String, AnyObject>()
         
         dictionary["_id"] = _id
-        dictionary["name"] = name
+        dictionary["category"] = category
       
         var array : [Dictionary<String,AnyObject>] = [Dictionary<String,AnyObject>]()
       

@@ -20,6 +20,9 @@
 		7914A7011F417889005D40C0 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7001F417889005D40C0 /* ViewController2.swift */; };
 		7914A7031F417897005D40C0 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7021F417897005D40C0 /* ViewController3.swift */; };
 		7914A7051F4178AD005D40C0 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7914A7041F4178AD005D40C0 /* ViewController4.swift */; };
+		79682ADA1F441B1700877E6E /* CarType.json in Resources */ = {isa = PBXBuildFile; fileRef = 79682AD91F441B1700877E6E /* CarType.json */; };
+		79682ADC1F44203500877E6E /* InnoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79682ADB1F44203500877E6E /* InnoType.swift */; };
+		79682ADF1F442BCC00877E6E /* CarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79682ADE1F442BCC00877E6E /* CarButton.swift */; };
 		79C6D02A1F41AB0100F9803F /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */; };
 		79C6D02B1F41AB0100F9803F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0111F41AB0100F9803F /* LICENSE */; };
 		79C6D02C1F41AB0100F9803F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0121F41AB0100F9803F /* README.md */; };
@@ -75,6 +78,9 @@
 		7914A7001F417889005D40C0 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		7914A7021F417897005D40C0 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		7914A7041F4178AD005D40C0 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		79682AD91F441B1700877E6E /* CarType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarType.json; sourceTree = "<group>"; };
+		79682ADB1F44203500877E6E /* InnoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnoType.swift; sourceTree = "<group>"; };
+		79682ADE1F442BCC00877E6E /* CarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarButton.swift; sourceTree = "<group>"; };
 		79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		79C6D0111F41AB0100F9803F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		79C6D0121F41AB0100F9803F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 				7914A7021F417897005D40C0 /* ViewController3.swift */,
 				7914A7041F4178AD005D40C0 /* ViewController4.swift */,
 				79C6D03C1F41AC7D00F9803F /* HorizontalParallaxTest-Bridging-Header.h */,
+				79682AD91F441B1700877E6E /* CarType.json */,
 			);
 			path = HorizontalParallaxTest;
 			sourceTree = "<group>";
@@ -207,9 +214,18 @@
 			path = HorizontalParallaxTestUITests;
 			sourceTree = "<group>";
 		};
+		79682ADD1F442BB400877E6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79682ADE1F442BCC00877E6E /* CarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		79C6D00D1F41AB0100F9803F /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				79682ADD1F442BB400877E6E /* View */,
 				79C6D03D1F41E39000F9803F /* Model */,
 				79C6D00E1F41AB0100F9803F /* PageMenu */,
 				79C6D0131F41AB0100F9803F /* TTSlider */,
@@ -297,6 +313,7 @@
 			children = (
 				79C6D03E1F41E39000F9803F /* IRCar.swift */,
 				79C6D03F1F41E39000F9803F /* IRCarSubCategories.swift */,
+				79682ADB1F44203500877E6E /* InnoType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,6 +445,7 @@
 				7914A6D81F417809005D40C0 /* Assets.xcassets in Resources */,
 				79C6D02D1F41AB0100F9803F /* diagmonds.png in Resources */,
 				79C6D02E1F41AB0100F9803F /* diagmonds_@2X.png in Resources */,
+				79682ADA1F441B1700877E6E /* CarType.json in Resources */,
 				79C6D02F1F41AB0100F9803F /* readme.txt in Resources */,
 				79C6D02B1F41AB0100F9803F /* LICENSE in Resources */,
 				7914A6D61F417809005D40C0 /* Main.storyboard in Resources */,
@@ -593,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79682ADF1F442BCC00877E6E /* CarButton.swift in Sources */,
 				7914A7031F417897005D40C0 /* ViewController3.swift in Sources */,
 				79C6D0331F41AB0100F9803F /* TTSlidingPage.m in Sources */,
 				79C6D0341F41AB0100F9803F /* TTSlidingPageTitle.m in Sources */,
@@ -603,6 +622,7 @@
 				7914A7011F417889005D40C0 /* ViewController2.swift in Sources */,
 				79C6D0321F41AB0100F9803F /* TTScrollViewWrapper.m in Sources */,
 				79C6D0401F41E39000F9803F /* IRCar.swift in Sources */,
+				79682ADC1F44203500877E6E /* InnoType.swift in Sources */,
 				79C6D0301F41AB0100F9803F /* TTBlackTriangle.m in Sources */,
 				79C6D0311F41AB0100F9803F /* TTScrollSlidingPagesController.m in Sources */,
 				7914A6D31F417809005D40C0 /* ViewController.swift in Sources */,

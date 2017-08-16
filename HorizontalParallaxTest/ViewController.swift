@@ -7,25 +7,48 @@
 //
 
 import UIKit
-
+import Gloss
 
 
 class ViewController: UIViewController {
     
     var pageMenu : CAPSPageMenu?
     var slider : TTScrollSlidingPagesController?
-
+    var innoType: [IRCar]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //pageMenuSetup()
-        TTSliderSetup()
+        getTestData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func getTestData(){
+       
+        if let path = NSBundle.mainBundle().pathForResource("CarType", ofType: "json") {
+            do {
+                let jsonData = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMappedIfSafe)
+                do {
+                    let jsonResult: NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    if let _ = jsonResult["innoType"] {
+                        
+                        guard let innoTypeData = InnoType(json: jsonResult as! JSON) else{
+                            return
+                        }
+                        
+                        self.innoType = innoTypeData.innoType
+                        self.TTSliderSetup()
+
+                    }
+                } catch {}
+            } catch {}
+        }
     }
 
     
@@ -93,6 +116,10 @@ class ViewController: UIViewController {
         
         self.slider = TTScrollSlidingPagesController()
 
+        self.slider?.dataSource = self
+        self.slider?.delegate = self
+        
+
         self.slider?.titleScrollerBottomEdgeColour = UIColor.clearColor()
         self.slider?.titleScrollerBottomEdgeHeight = 0
         self.slider!.titleScrollerHeight = 30
@@ -113,13 +140,8 @@ class ViewController: UIViewController {
         self.slider?.view.frame = CGRectMake(0.0, self.view.frame.size.height - 177.0 - 40.0, self.view.frame.size.width, 177.0)
         self.view.addSubview((self.slider?.view)!)
         
-        
-        self.slider?.dataSource = self
-        self.slider?.delegate = self
-        
 
-        //[self.view addSubview:self.slider.view];
-        //self.addChildViewController(self.slider!)//[self addChildViewController:self.slider];
+        //self.addChildViewController(self.slider!)
 
 
     }
@@ -129,64 +151,32 @@ class ViewController: UIViewController {
 extension ViewController: TTSlidingPagesDataSource{
     
     func numberOfPagesForSlidingPagesViewController(source: TTScrollSlidingPagesController!) -> Int32 {
-        return 4
+        return Int32((innoType?.count)!)
     }
     
     func pageForSlidingPagesViewController(source: TTScrollSlidingPagesController!, atIndex index: Int32) -> TTSlidingPage! {
         
         let main = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         
-        switch index {
-        case 0:
-            let viewController : ViewController1 = main.instantiateViewControllerWithIdentifier("ViewController1") as! ViewController1
-            return TTSlidingPage(contentViewController: viewController)
-
-        case 1:
-            let viewController : ViewController2 = main.instantiateViewControllerWithIdentifier("ViewController2") as! ViewController2
-            return TTSlidingPage(contentViewController: viewController)
+        let car = innoType![Int(index)]
         
-        case 2:
-            let viewController : ViewController3 = main.instantiateViewControllerWithIdentifier("ViewController3") as! ViewController3
-            return TTSlidingPage(contentViewController: viewController)
-            
-        case 3:
-            let viewController : ViewController4 = main.instantiateViewControllerWithIdentifier("ViewController4") as! ViewController4
-            return TTSlidingPage(contentViewController: viewController)
-            
-            
-        default:
-            let viewController : ViewController1 = main.instantiateViewControllerWithIdentifier("ViewController1") as! ViewController1
-            return TTSlidingPage(contentViewController: viewController)
-            
+        let viewController : ViewController1 = main.instantiateViewControllerWithIdentifier("ViewController1") as! ViewController1
+        viewController.arrayForCarTypes = car.subCategories
+        if index % 2 == 0{
+            viewController.view.backgroundColor = UIColor.blueColor()
+        }else{
+            viewController.view.backgroundColor = UIColor.yellowColor()
         }
+        return TTSlidingPage(contentViewController: viewController)
         
     }
     
     func titleForSlidingPagesViewController(source: TTScrollSlidingPagesController!, atIndex index: Int32) -> TTSlidingPageTitle! {
-        switch index {
-        case 0:
-            let title = TTSlidingPageTitle(headerText: "ECONOMY")
-            return title!
-            
-        case 1:
-            let title = TTSlidingPageTitle(headerText: "LUXURY")
-            return title!
-            
-        case 2:
-            let title = TTSlidingPageTitle(headerText: "SHARE")
-            return title!
-            
-        case 3:
-            let title = TTSlidingPageTitle(headerText: "MINI")
-            return title!
-            
-        default:
-            let title = TTSlidingPageTitle(headerText: "ViewController")
-            return title!
-
-            
-        }
-
+        
+        let car = innoType![Int(index)]
+        let title = TTSlidingPageTitle(headerText: car.category)
+        return title!
+        
     }
 }
 

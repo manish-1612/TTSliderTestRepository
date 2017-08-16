@@ -1,0 +1,70 @@
+{
+    "innoType": [{
+                 "_id": 0,
+                 "category": "Taxi",
+                 "subCategories": [{
+                                   "_id": "597728c59579c7003092c9a9",
+                                   "category": "Taxi",
+                                   "subCategory": "Economy",
+                                   "pricePerKm": "10",
+                                   "waitingCharegePerMin": "5",
+                                   "baseFare": "30",
+                                   "baseKm": "5",
+                                   "serviceTax": "13",
+                                   "geoFenceId": "59772400ae0c80881e2d71b9"
+                                   },
+                                   {
+                                   "_id": "597728dc9579c7003092c9aa",
+                                   "name": "Taxi",
+                                   "subCategoryName": "yellow",
+                                   "category": 0,
+                                   "subCategory": 1,
+                                   "pricePerKm": "10",
+                                   "waitingCharegePerMin": "5",
+                                   "baseFare": "30",
+                                   "baseKm": "5",
+                                   "serviceTax": "13",
+                                   "geoFenceId": "59772400ae0c80881e2d71b9"
+                                   }
+                                   ]
+                 },
+                 {
+                 "_id": 1,
+                 "category": "Sedan",
+                 "subCategories": [{
+                                   "_id": "597728f79579c7003092c9ab",
+                                   "category": "Sedan",
+                                   "subCategory": "prime",
+                                   "pricePerKm": "10",
+                                   "waitingCharegePerMin": "5",
+                                   "baseFare": "30",
+                                   "baseKm": "5",
+                                   "serviceTax": "13",
+                                   "geoFenceId": "59772400ae0c80881e2d71b9"
+                                   },
+                                   {
+                                   "_id": "597729039579c7003092c9ac",
+                                   "category": "Sedan",
+                                   "subCategory": "lux",
+                                   "pricePerKm": "10",
+                                   "waitingCharegePerMin": "5",
+                                   "baseFare": "30",
+                                   "baseKm": "5",
+                                   "serviceTax": "13",
+                                   "geoFenceId": "59772400ae0c80881e2d71b9"
+                                   },
+                                   {
+                                   "_id": "597729139579c7003092c9ad",
+                                   "category": "Sedan",
+                                   "subCategory": "limo",
+                                   "pricePerKm": "10",
+                                   "waitingCharegePerMin": "5",
+                                   "baseFare": "30",
+                                   "baseKm": "5",
+                                   "serviceTax": "13",
+                                   "geoFenceId": "59772400ae0c80881e2d71b9"
+                                   }
+                                   ]
+                 }
+                 ]
+}
