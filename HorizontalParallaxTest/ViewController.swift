@@ -172,7 +172,7 @@ extension ViewController: TTSlidingPagesDataSource{
     func titleForSlidingPagesViewController(source: TTScrollSlidingPagesController!, atIndex index: Int32) -> TTSlidingPageTitle! {
         
         let car = innoType![Int(index)]
-        let title = TTSlidingPageTitle(headerText: car.category)
+        let title = TTSlidingPageTitle(headerText: car.category.uppercaseString)
         return title!
         
     }

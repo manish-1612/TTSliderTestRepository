@@ -39,13 +39,9 @@ class ViewController1: UIViewController {
         
         if arrayForCarTypes?.count > 0{
             if arrayForCarTypes?.count <= 3{
-                
-                let frame = CGRectMake(0.0, self.view.frame.size.height / 2.0, self.view.frame.size.width, 1.0)
-                let centreLine = UIView(frame: frame)
-                centreLine.backgroundColor = UIColor.clearColor()
-                self.view.addSubview(centreLine)
-                
-                createCarButtonsHorizontallyWith(centreLine.frame.origin.y)
+                let centreY = self.view.frame.size.height / 2.0
+                let yOriginForButtons = centreY - 25.0
+                createCarButtonsHorizontallyWith(yOriginForButtons)
                 
             }else if arrayForCarTypes?.count > 3 && arrayForCarTypes?.count <= 5{
                 //no support
@@ -67,19 +63,29 @@ class ViewController1: UIViewController {
             
             let xOrigin = (CGFloat(i) * 72.0) + (intermediateSpacing * CGFloat(i + 1))
             let yOrigin = centreY - (72.0/2.0)
-                        
+            
+            //button for car selection
             let frameForButton = CGRectMake(xOrigin, yOrigin, 72.0, 72.0)
             let carButton = IRCarButton(frame: frameForButton, category: subCategory)
-            if i % 2 == 0{
-                carButton.backgroundColor = UIColor.redColor()
-            }else{
-                carButton.backgroundColor = UIColor.purpleColor()
-            }
-            
+            carButton.backgroundColor = UIColor.redColor()
             carButton.addTarget(self, action: #selector(ViewController1.carSelected(_:)), forControlEvents: .TouchUpInside)
             carButton.layer.cornerRadius = 72.0/2.0
             carButton.layer.masksToBounds = true
             self.view.addSubview(carButton)
+            
+            //label for subcategory name
+            let xOriginForLabel = carButton.frame.origin.x
+            let yOriginForLabel = carButton.frame.origin.y + carButton.frame.size.height + 10.0
+            
+            let labelForSubcategoryName = UILabel(frame: CGRectMake(xOriginForLabel, yOriginForLabel, 200.0, 23.0))
+            labelForSubcategoryName.text = subCategory.subCategory.uppercaseString
+            labelForSubcategoryName.textColor = UIColor.darkGrayColor()
+            labelForSubcategoryName.font = UIFont.systemFontOfSize(12.0)
+            self.view.addSubview(labelForSubcategoryName)
+            labelForSubcategoryName.numberOfLines = 0
+            labelForSubcategoryName.sizeToFit()
+            labelForSubcategoryName.center = CGPointMake(carButton.center.x, labelForSubcategoryName.center.y)
+                
             
             arrayForCarButtons?.append(carButton)
             
