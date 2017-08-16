@@ -23,6 +23,7 @@
 		79682ADA1F441B1700877E6E /* CarType.json in Resources */ = {isa = PBXBuildFile; fileRef = 79682AD91F441B1700877E6E /* CarType.json */; };
 		79682ADC1F44203500877E6E /* InnoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79682ADB1F44203500877E6E /* InnoType.swift */; };
 		79682ADF1F442BCC00877E6E /* CarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79682ADE1F442BCC00877E6E /* CarButton.swift */; };
+		79682AE11F444E5700877E6E /* CarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79682AE01F444E5700877E6E /* CarLabel.swift */; };
 		79C6D02A1F41AB0100F9803F /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */; };
 		79C6D02B1F41AB0100F9803F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 79C6D0111F41AB0100F9803F /* LICENSE */; };
 		79C6D02C1F41AB0100F9803F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 79C6D0121F41AB0100F9803F /* README.md */; };
@@ -81,6 +82,7 @@
 		79682AD91F441B1700877E6E /* CarType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarType.json; sourceTree = "<group>"; };
 		79682ADB1F44203500877E6E /* InnoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnoType.swift; sourceTree = "<group>"; };
 		79682ADE1F442BCC00877E6E /* CarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarButton.swift; sourceTree = "<group>"; };
+		79682AE01F444E5700877E6E /* CarLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarLabel.swift; sourceTree = "<group>"; };
 		79C6D0101F41AB0100F9803F /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		79C6D0111F41AB0100F9803F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		79C6D0121F41AB0100F9803F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				79682ADE1F442BCC00877E6E /* CarButton.swift */,
+				79682AE01F444E5700877E6E /* CarLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				79682ADC1F44203500877E6E /* InnoType.swift in Sources */,
 				79C6D0301F41AB0100F9803F /* TTBlackTriangle.m in Sources */,
 				79C6D0311F41AB0100F9803F /* TTScrollSlidingPagesController.m in Sources */,
+				79682AE11F444E5700877E6E /* CarLabel.swift in Sources */,
 				7914A6D31F417809005D40C0 /* ViewController.swift in Sources */,
 				79C6D02C1F41AB0100F9803F /* README.md in Sources */,
 				79C6D0351F41AB0100F9803F /* TTUITableViewZoomController.m in Sources */,

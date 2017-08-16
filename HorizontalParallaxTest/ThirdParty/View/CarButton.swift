@@ -11,6 +11,8 @@ import UIKit
 class IRCarButton: UIButton {
     
     let category: IRCarSubCategories?
+    var categoryNameLabel: IRCarLabel?
+    var categoryPriceLabel: IRCarLabel?
 
     init(frame: CGRect, category: IRCarSubCategories) {
         self.category = category

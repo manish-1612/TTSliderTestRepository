@@ -18,6 +18,7 @@ class ViewController1: UIViewController {
     var arrayForCarTypes : [IRCarSubCategories]?
     var arrayForCarButtons: [IRCarButton]?
     var carSelectionDelegate: CarSelectionVCDelegate?
+    var parentVC: ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,21 +80,47 @@ class ViewController1: UIViewController {
             
             let labelForSubcategoryName = UILabel(frame: CGRectMake(xOriginForLabel, yOriginForLabel, 200.0, 23.0))
             labelForSubcategoryName.text = subCategory.subCategory.uppercaseString
-            labelForSubcategoryName.textColor = UIColor.darkGrayColor()
+            labelForSubcategoryName.textColor = UIColor.lightGrayColor()
             labelForSubcategoryName.font = UIFont.systemFontOfSize(12.0)
             self.view.addSubview(labelForSubcategoryName)
             labelForSubcategoryName.numberOfLines = 0
             labelForSubcategoryName.sizeToFit()
             labelForSubcategoryName.center = CGPointMake(carButton.center.x, labelForSubcategoryName.center.y)
-                
             
+            
+            //label for subcategory price
+            let xOriginForPriceLabel = carButton.frame.origin.x
+            let yOriginForPriceLabel = labelForSubcategoryName.frame.origin.y + labelForSubcategoryName.frame.size.height + 10.0
+            
+            let labelForSubcategoryPrice = IRCarLabel(frame: CGRectMake(xOriginForPriceLabel, yOriginForPriceLabel, 200.0, 23.0))
+            labelForSubcategoryPrice.isSelected = false
+            labelForSubcategoryPrice.text = "$\(subCategory.baseFare)"
+            labelForSubcategoryPrice.textColor = UIColor.grayColor()
+            labelForSubcategoryPrice.font = UIFont.systemFontOfSize(14.0)
+            self.view.addSubview(labelForSubcategoryPrice)
+            labelForSubcategoryPrice.numberOfLines = 0
+            labelForSubcategoryPrice.sizeToFit()
+            labelForSubcategoryPrice.center = CGPointMake(carButton.center.x, labelForSubcategoryPrice.center.y)
+            
+            carButton.categoryPriceLabel = labelForSubcategoryPrice
             arrayForCarButtons?.append(carButton)
+            parentVC?.arrayForAllCarButtons.append(carButton)
             
         }
     }
     
     
     func carSelected(sender: IRCarButton){
+        
+        for button in arrayForCarButtons!{
+            if sender.category?.category == button.category?.category && sender.category?.subCategory == button.category?.subCategory{
+                button.selected = true
+                button.categoryPriceLabel?.isSelected = true
+            }else{
+                button.selected = false
+                button.categoryPriceLabel?.isSelected = false
+            }
+        }
         
         if carSelectionDelegate != nil{
             carSelectionDelegate?.carSelectedWithSubCategory(sender.category!)

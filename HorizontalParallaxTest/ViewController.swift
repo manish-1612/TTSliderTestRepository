@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     var pageMenu : CAPSPageMenu?
     var slider : TTScrollSlidingPagesController?
+    var arrayForAllCarButtons = [IRCarButton]()
     var innoType: [IRCar]?
 
     override func viewDidLoad() {
@@ -163,8 +164,9 @@ extension ViewController: TTSlidingPagesDataSource{
         let viewController : ViewController1 = main.instantiateViewControllerWithIdentifier("ViewController1") as! ViewController1
         viewController.arrayForCarTypes = car.subCategories
         viewController.carSelectionDelegate = self
+        viewController.parentVC = self
         viewController.view.backgroundColor = UIColor.clearColor()
-
+        
         return TTSlidingPage(contentViewController: viewController)
         
     }
@@ -192,6 +194,18 @@ extension ViewController: TTSlidingPageDelegate{
 extension ViewController: CarSelectionVCDelegate{
     
     func carSelectedWithSubCategory(subcategory: IRCarSubCategories) {
+        
+        for button in arrayForAllCarButtons{
+            if subcategory.category == button.category?.category && subcategory.subCategory == button.category?.subCategory{
+                button.selected = true
+                button.categoryPriceLabel?.isSelected = true
+            }else{
+                button.selected = false
+                button.categoryPriceLabel?.isSelected = false
+            }
+        }
+        
+        
         print("selected category : \(subcategory.category, subcategory.subCategory)")
     }
 }
